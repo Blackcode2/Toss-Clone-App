@@ -131,9 +131,9 @@ struct MainView: View {
                     
                     HStack(alignment: .center, spacing: 25) {
                         ServiceButton(title: "계좌개설", action: {})
-                        VerticalDivider()
+                        VerticalDivider(height: 30)
                         ServiceButton(title: "카드발급", action: {})
-                        VerticalDivider()
+                        VerticalDivider(height: 30)
                         ServiceButton(title: "대출받기", action: {})
                     }
                     .padding(.top, 8)
@@ -286,6 +286,6 @@ struct VerticalDivider: View {
     var body: some View {
         Rectangle()
             .fill(color)
-            .frame(width: width, height: height ?? .infinity)
+            .frame(width: width, height: height ?? 10)
     }
 }
